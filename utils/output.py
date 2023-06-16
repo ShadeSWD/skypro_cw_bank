@@ -8,14 +8,16 @@ def separate_account_details(acc_det):
     :return: account_name, account_number
     """
     acc_det_spl = acc_det.split()
-    acc_name = ''
+    acc_names = []
     acc_number = ''
 
     for spl in acc_det_spl:
         if spl.isdigit():
             acc_number = spl
         else:
-            acc_name += ' ' + spl
+            acc_names.append(spl)
+
+    acc_name = ' '.join(acc_names)
 
     return acc_name, acc_number
 

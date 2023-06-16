@@ -4,5 +4,5 @@ from utils import output
 
 if __name__ == "__main__":
     operations = get_data.get_operations("data/operations.json")
-    print(operations)
-    output.print_operation(operations[8])
+    for operation in operations:
+        output.print_operation(operation)
