@@ -38,7 +38,7 @@ def sort_operations_by_time(operations):
     :param operations: list of operations
     :return: list of sorted operations
     """
-    sorted_operations = sorted(operations, key=lambda k: k['id'])
+    sorted_operations = sorted(operations, key=lambda k: k['date'])
     return sorted_operations
 
 
