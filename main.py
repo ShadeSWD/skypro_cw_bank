@@ -1,4 +1,4 @@
-from utils import read_data
+from utils import get_data
 
 if __name__ == "__main__":
-    print(read_data.read_json("data/operations.json"))
+    print(get_data.get_operations("data/operations.json"))
